@@ -1,0 +1,6 @@
+Question 4
+How well versed are you on the Unix command line?
+
+I have basic proficiency in Unix. I recently completed a training session on UNIX commands and 
+I have a bit of experience using these commands hands-on as well. I am constantly trying to do 
+most of my work through the command line to improve my Unix skills.
