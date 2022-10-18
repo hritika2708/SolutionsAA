@@ -75,3 +75,14 @@ for i in range(len(df)):
 ```
 > After function declaration is done and the dataset is loaded, the clean function will execute the cleaning process to remove the links, mentions, and special characters.
 > The loop will then run to calculate the degree of profanity, measured in terms of percentages.
+<hr>
+
+### 2. Which is an interesting data set you discovered recently? Why is it your favorite? No datasets on Kaggle, please.  <hr>
+
+**Solution**
+**Ans:** I recently came across this dataset on the website of the Government of the UK which contains data on the trends of people washing their hands during the recent COVID - 19 pandemic. Data was collected quarterly starting from April 2020. 
+
+As someone very particular about hygiene, especially cleaning my hands before eating food I find this dataset very interesting. People were grouped according to their geographical location, gender, marital status etc to name, and were asked a variety of questions like if they wash their hands after contact with animals.
+ 
+The data is primarily numerical and the collection was performed per International standards of market research like ISO 20252 and with the Ipsos MORI Terms and Conditions.
+[Link to Data](https://www.data.gov.uk/dataset/1f9e8832-d668-43ff-9511-d01f8ce0af22/handwashing-consumer-tracker)
