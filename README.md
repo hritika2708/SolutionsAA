@@ -66,3 +66,12 @@ def racism(tweet):
 > In this function, each word in a tweet is checked if it is a racial slur, and the counter `r` is increased if it encounters a racial slur.
 > `r` holds the number of slur words used in each tweet, so the percentage of profanity can be given by $\frac{r}{num\ of\ words\ in\ tweet} * 100$
 > This is the percentage of words that are racial slurs in the tweet.
+> Eg: for a tweet of length 10, if 3 racial slurs occur, then it will be 30% profane. Similarly, for the same word length, if a single racial slur occurs `n` times, then the profanity will be `n * 10%`.
+
+```python
+clean()
+for i in range(len(df)):
+     df.iloc[i,-1]=racism(df.iloc[i,-1])
+```
+> After function declaration is done and the dataset is loaded, the clean function will execute the cleaning process to remove the links, mentions, and special characters.
+> The loop will then run to calculate the degree of profanity, measured in terms of percentages.
