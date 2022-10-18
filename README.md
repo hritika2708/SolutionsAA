@@ -1,9 +1,10 @@
 
 # Affinity Answers
 
-### 1. Imagine there is a file full of Twitter tweets by various users and you are provided a set of words that indicates racial slurs. Write a program that can indicate the degree of profanity for each sentence in the file. Write in any programming language (preferably in Python)-make any assumptions, but remember to state them. Please place the code in GitHub with proper documentation and share. <hr>
 
-**Solution:**
+### 1. Imagine there is a file full of Twitter tweets by various users and you are provided a set of words that indicates racial slurs. Write a program that can indicate the degree of profanity for each sentence in the file. Write in any programming language (preferably in Python)-make any assumptions, but remember to state them. Please place the code in GitHub with proper documentation and share. 
+
+**Ans:**
 * I have assumed that the data provided is a csv file, with the name filename.csv
 * Each tweet is present in the csv file at the first column.
 * Each tweet is in a single line only, i.e. no `\n`, if present has been removed.
@@ -77,12 +78,23 @@ for i in range(len(df)):
 > The loop will then run to calculate the degree of profanity, measured in terms of percentages.
 <hr>
 
-### 2. Which is an interesting data set you discovered recently? Why is it your favorite? No datasets on Kaggle, please.  <hr>
+### 2. Which is an interesting data set you discovered recently? Why is it your favorite? No datasets on Kaggle, please. 
 
-**Solution**
 **Ans:** I recently came across this dataset on the website of the Government of the UK which contains data on the trends of people washing their hands during the recent COVID - 19 pandemic. Data was collected quarterly starting from April 2020. 
 
 As someone very particular about hygiene, especially cleaning my hands before eating food I find this dataset very interesting. People were grouped according to their geographical location, gender, marital status etc to name, and were asked a variety of questions like if they wash their hands after contact with animals.
  
 The data is primarily numerical and the collection was performed per International standards of market research like ISO 20252 and with the Ipsos MORI Terms and Conditions.
 [Link to Data](https://www.data.gov.uk/dataset/1f9e8832-d668-43ff-9511-d01f8ce0af22/handwashing-consumer-tracker)
+
+---
+
+### 3. Why do we need a database? We can store everything in a file, no? 
+**Ans:** Databases are more structured than files. When we use databases we have many RDBMS systems which help us quickly access and manipulate data. It also helps in managing the large size of data. These systems have many useful features including the data saving feature which helps in case of a system crash.  
+
+Many programming languages have special libraries to handle databases quickly.  A database has security built into it with access rights and it also helps to store different types of data in a single place. The integrity of data stored in a database is never lost due to its ACID properties.
+
+---
+### 4. How well versed are you on the Unix command line?
+
+**Ans:** I have basic proficiency in Unix. I recently completed a training session on UNIX commands and I have a bit of experience using these commands hands-on as well. I am constantly trying to do most of my work through the command line to improve my Unix skills.
