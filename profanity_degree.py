@@ -41,7 +41,7 @@ def racism(tweet):
     return (r*100)/len(tweet)        
 
 
-text = clean()
+clean()
 
 for i in range(len(df)):
     df.iloc[i,-1]=racism(df.iloc[i,-1])
