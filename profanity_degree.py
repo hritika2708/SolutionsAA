@@ -29,7 +29,7 @@ def clean():
 
 
 def racism(tweet):
-    #let the given racial slurs be present in a global set called racist
+    #let the given racial slurs be present in a global list called racist
     #let r be an integer which will store the number of slur words used in each tweet
     #I assume that the racist word used will be written as a whole without censoring
     tweet = tweet.split()
