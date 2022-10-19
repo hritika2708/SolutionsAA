@@ -19,7 +19,7 @@ import re
 df=pd.read_csv('filename.csv')   
 df['racism_degree'] = 0 #let it be last column
 ```
-> Created a new column and initialised `0` to store the degree of racism as a percentage.
+> Created a new column and initialised it to `0` to store the degree of racism as a percentage.
 > I am using pandas to easily manipulate csv files, and regex to clean data.
 
 * I have assumed that the tweets data is available in the first column of the csv file.
@@ -82,7 +82,7 @@ for i in range(len(df)):
 
 **Ans:** I recently came across this dataset on the website of the Government of the UK which contains data on the trends of people washing their hands during the recent COVID - 19 pandemic. Data was collected quarterly starting from April 2020. 
 
-As someone very particular about hygiene, especially cleaning my hands before eating food I find this dataset very interesting. People were grouped according to their geographical location, gender, marital status etc to name, and were asked a variety of questions like if they wash their hands after contact with animals.
+As someone very particular about hygiene, especially cleaning my hands before eating food I find this dataset very interesting. People were grouped according to their geographical location, gender, marital status etc to name a few and were asked a variety of questions like if they wash their hands after contact with animals.
  
 The data is primarily numerical and the collection was performed per International standards of market research like ISO 20252 and with the Ipsos MORI Terms and Conditions.
 [Link to Data](https://www.data.gov.uk/dataset/1f9e8832-d668-43ff-9511-d01f8ce0af22/handwashing-consumer-tracker)
