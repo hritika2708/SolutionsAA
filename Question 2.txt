@@ -6,7 +6,7 @@ Ans: I recently came across this dataset on the website of the Government of the
 data on the trends of people washing their hands during the recent COVID - 19 pandemic. Data 
 was collected quarterly starting from April 2020. As someone very particular about hygiene, 
 especially cleaning my hands before eating food I find this dataset very interesting. People 
-were grouped according to their geographical location, gender, marital status etc to name, 
+were grouped according to their geographical location, gender, marital status etc to name a few 
 and were asked a variety of questions like if they wash their hands after contact with animals.
  
 
