@@ -18,6 +18,7 @@ import re
 
 df=pd.read_csv('filename.csv')   
 df['racism_degree'] = 0 #let it be last column
+racist = ... #Let this be the list provided
 ```
 > Created a new column and initialised it to `0` to store the degree of racism as a percentage.
 > I am using pandas to easily manipulate csv files, and regex to clean data.
@@ -29,19 +30,20 @@ df['racism_degree'] = 0 #let it be last column
 * I assume that the tweets and the set of racial slurs are all in lower case.
 ```python
 def clean():
-	'''
-	Function to clean tweet by removing links, special characters, etc. by using regex
-	It returns a tokenised data
-	'''
-    
+    '''
+    Function to clean tweet by removing links, special characters, etc. by using regex
+    It returns a tokenised data
+    '''
     def clean_tweet(tweet):
-    	'''
-    	This is a utility function, created to improve readability
-    	which can be changed based on requirement
-    	'''    
+        '''
+        This is a utility function, created to improve readability
+        which can be changed based on requirement
+        '''
+        #after substitution the text is split by spaces as delimiter, multiple whitespace is considered as one
+        #they are then joined back into a list using join function
         return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)", " ", tweet).split())
 
-    #let the name of the column that stores the tweets be tweets and it is the first column of the dataset
+    #let the name of the column that stores the tweets be 'tweets' and it is the first column of the dataset
     for i in range(len(df)):
         df.iloc[i,0]=clean_tweet(df.iloc[i,0])
 ```
@@ -56,13 +58,13 @@ def racism(tweet):
     #let the given racial slurs be present in a global set called racist
     #let r be an integer which will store the number of slur words used in each tweet
     #I assume that the racist word used will be written as a whole without censoring
-    tweet=tweet.split(" ")
+    tweet = tweet.split()
     r=0
     for i in tweet:
         if i in racist:
             r=r+1
     #this statement will calculate the percentage of profanity in each sentence        
-    return (r*100)/len(tweet)   
+    return (r*100)/len(tweet)
 ```
 > In this function, each word in a tweet is checked if it is a racial slur, and the counter `r` is increased if it encounters a racial slur.
 > `r` holds the number of slur words used in each tweet, so the percentage of profanity can be given by $\frac{r}{num\ of\ words\ in\ tweet} * 100$
@@ -71,8 +73,9 @@ def racism(tweet):
 
 ```python
 clean()
+
 for i in range(len(df)):
-     df.iloc[i,-1]=racism(df.iloc[i,-1])
+    df.iloc[i,-1]=racism(df.iloc[i,-1])
 ```
 > After function declaration is done and the dataset is loaded, the clean function will execute the cleaning process to remove the links, mentions, and special characters.
 > The loop will then run to calculate the degree of profanity, measured in terms of percentages.
