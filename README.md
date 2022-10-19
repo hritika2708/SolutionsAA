@@ -26,8 +26,8 @@ racist = ... #Let this be the list provided
 * I have assumed that the tweets data is available in the first column of the csv file.
 * Each tweet is in a single line, without any `\n`.
 * I assume that there are no racial slurs in the links, or mentions.
-* Racial slurs are not censored by special symbols, and are used exactly how they appear in the set of words provided.
-* I assume that the tweets and the set of racial slurs are all in lower case.
+* Racial slurs are not censored by special symbols, and are used exactly how they appear in the list of words provided.
+* I assume that the tweets and the list of racial slurs are all in lower case.
 ```python
 def clean():
     '''
@@ -52,10 +52,10 @@ def clean():
 > I have used a separate `clean_tweet` function to improve readability of the code, and to allow code reusability and easy to modify based on requirement.
 
 * I have assumed that the racial slurs are globally available in a variable called `racist`.
-*  The racial slurs are not censored and available exactly how it is provided in the racial slurs set. Eg: `black` in the tweet will be exactly available in the `racist` variable. It will not be present in any other forms, such as `b***k`.
+*  The racial slurs are not censored and available exactly how it is provided in the racial slurs list. Eg: `black` in the tweet will be exactly available in the `racist` variable. It will not be present in any other forms, such as `b***k`.
 ```python
 def racism(tweet):
-    #let the given racial slurs be present in a global set called racist
+    #let the given racial slurs be present in a global variable called racist
     #let r be an integer which will store the number of slur words used in each tweet
     #I assume that the racist word used will be written as a whole without censoring
     tweet = tweet.split()
@@ -93,7 +93,7 @@ The data is primarily numerical and the collection was performed per Internation
 ---
 
 ### 3. Why do we need a database? We can store everything in a file, no? 
-**Ans:** Databases are more structured than files. When we use databases we have many RDBMS which help us quickly access and manipulate data. It also helps in managing the large size of data. These systems have many useful features including the data saving feature which helps in case of a system crash.  
+**Ans:** Databases are more structured than files. When we use databases we have many RDBMS systems which help us quickly access and manipulate data. It also helps in managing the large size of data. These systems have many useful features including the data saving feature which helps in case of a system crash.  
 
 Many programming languages have special libraries to handle databases quickly.  A database has security built into it with access rights and it also helps to store different types of data in a single place. The integrity of data stored in a database is never lost due to its ACID properties.
 
